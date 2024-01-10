@@ -9,8 +9,8 @@ const SignInDashboard = () => {
   }, [navigate]);
 
   const onIndustryPortalTextClick = useCallback(() => {
-    // Please sync "Industry Portal" to the project
-  }, []);
+    navigate("/industry-portal")// Please sync "Industry Portal" to the project
+  }, [navigate]);
 
   const onAlumniPortalTextClick = useCallback(() => {
     navigate("/alumni-portal")
@@ -27,8 +27,8 @@ const SignInDashboard = () => {
   }, []);
 
   const onAdminPortalTextClick = useCallback(() => {
-    // Please sync "AdminPortal" to the project
-  }, []);
+   navigate("/admin-portal");
+  }, [navigate]);
 
   const onImage1Click = useCallback(() => {
     // Please sync "AdminPortal" to the project
@@ -46,7 +46,7 @@ const SignInDashboard = () => {
         alt=""
         src="/rectangle-37@2x.png"
       />
-      <div className="absolute top-[0px] left-[484px] rounded-tl-16xl rounded-tr-none rounded-br-none rounded-bl-16xl bg-whitesmoke-200 w-[796px] h-[832px]" />
+      <div className="absolute top-[0px] left-[484px] rounded-tl-16xl rounded-tr-none rounded-br-none rounded-bl-16xl bg-whitesmoke-200 w-[896px] h-[832px]" />
       <div className="absolute top-[259px] left-[656px] rounded-3xs [background:linear-gradient(160.89deg,_rgba(181,_116,_245,_0.09),_rgba(116,_131,_207,_0.09)_48.44%,_rgba(83,_189,_235,_0.09))] shadow-[32.1px_-32.1px_32.07px_rgba(165,_165,_165,_0.09)_inset,_-32.1px_32.1px_32.07px_rgba(255,_255,_255,_0.09)_inset] [backdrop-filter:blur(29.5px)] w-[439px] h-[519px]" />
       <b className="absolute top-[191px] left-[702px] text-[16px] font-poppins text-gray-200 text-center">
         Connecting Futures, Empowering Careers.

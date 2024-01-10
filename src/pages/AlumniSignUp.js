@@ -1,21 +1,19 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-const StudentSignUp = () => {
+const AlumniSignUp = () => {
   const navigate = useNavigate();
 
   const onRectangle8Click = useCallback(() => {
-    navigate("/student-portal");
+    navigate("/alumni-portal");
   }, [navigate]);
 
   const onAlreadyHaveAnClick = useCallback(() => {
-    navigate("/student-portal");
+    navigate("/alumni-portal");
   }, [navigate]);
 
-
-
   return (
-    <div className="relative bg-white w-full h-[832px] overflow-hidden text-left text-3xl text-darkgray font-sen">
+    <div className="relative bg-white w-full h-[832px] overflow-hidden text-left text-3xl text-darkslateblue font-sen">
       <img
         className="absolute top-[-27px] left-[-348px] w-[988px] h-[857px] object-cover"
         alt=""
@@ -29,8 +27,8 @@ const StudentSignUp = () => {
       <div className="absolute top-[0px] left-[484px] rounded-tl-16xl rounded-tr-none rounded-br-none rounded-bl-16xl bg-whitesmoke-200 w-[794px] h-[832px]" />
       <div className="absolute top-[0px] left-[484px] rounded-tl-13xl rounded-tr-none rounded-br-none rounded-bl-13xl [background:linear-gradient(160.89deg,_rgba(181,_116,_245,_0.09),_rgba(116,_131,_207,_0.09)_48.44%,_rgba(83,_189,_235,_0.09))] shadow-[32.1px_-32.1px_32.07px_rgba(165,_165,_165,_0.09)_inset,_-32.1px_32.1px_32.07px_rgba(255,_255,_255,_0.09)_inset] [backdrop-filter:blur(29.5px)] w-[896px] h-[832px]" />
       <div className="absolute top-[253px] left-[626px] rounded-3xs bg-steelblue shadow-[32.1px_-32.1px_32.07px_rgba(165,_165,_165,_0.09)_inset,_-32.1px_32.1px_32.07px_rgba(255,_255,_255,_0.09)_inset] [backdrop-filter:blur(29.5px)] w-[511px] h-[482px] opacity-[0.5] mix-blend-screen" />
-      <div className="absolute top-[105px] left-[calc(50%_+_185px)] text-25xl font-semibold font-poppins text-darkslateblue inline-block w-[219px] h-[39px]">
-    Sign Up
+      <div className="absolute top-[105px] left-[calc(50%_+_185px)] text-25xl font-semibold font-poppins inline-block w-[219px] h-[39px]">
+        Sign Up
       </div>
       <img
         className="absolute top-[128px] left-[calc(50%_+_353px)] rounded-3xs max-h-full w-[106px] object-cover"
@@ -42,14 +40,14 @@ const StudentSignUp = () => {
         alt=""
         src="/vector-2@2x.png"
       />
-      <div className="absolute top-[408px] left-[665px] w-[434px] h-[53px]">
+      <div className="absolute top-[408px] left-[665px] w-[434px] h-[53px] text-darkgray">
         <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-3xs bg-gray-100 box-border border-[1.5px] border-solid border-darkgray" />
         <div className="absolute h-[58.3%] w-[27.76%] top-[21.7%] right-[68.06%] bottom-[20%] left-[4.17%] bg-gray-100" />
         <div className="absolute h-2/5 w-[28.06%] top-[30%] left-[8.06%] inline-block">
           Email
         </div>
       </div>
-      <div className="absolute top-[495px] left-[665px] w-[434px] h-[53px]">
+      <div className="absolute top-[495px] left-[665px] w-[434px] h-[53px] text-darkgray">
         <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-3xs bg-gray-100 box-border border-[1.5px] border-solid border-darkgray" />
         <div className="absolute h-[58.3%] w-[27.76%] top-[21.7%] right-[68.06%] bottom-[20%] left-[4.17%] bg-gray-100" />
         <div className="absolute h-[38.3%] w-[43%] top-[30%] left-[7.17%] inline-block">
@@ -68,16 +66,10 @@ const StudentSignUp = () => {
       <b className="absolute top-[598px] left-[793px] text-5xl flex text-whitesmoke-100 text-center items-center justify-center w-[184px] h-[27px]">
         Sign Up
       </b>
-      <div className="absolute top-[180px] left-[750px] text-[18px] text-darkslateblue whitespace-pre-wrap flex items-center w-[299px] h-[7px]">
+      <div className="absolute top-[180px] left-[750px] text-lg whitespace-pre-wrap flex items-center w-[299px] h-[7px]">
         Please Sign Up to continue
       </div>
-      <div className="absolute top-[311px] left-[665px] w-[434px] h-[53px]">
-        <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-3xs bg-gray-100 box-border border-[1.5px] border-solid border-darkgray" />
-        <div className="absolute h-[58.3%] w-[27.76%] top-[21.7%] right-[68.06%] bottom-[20%] left-[4.17%] bg-gray-100" />
-        <div className="absolute h-[35.09%] w-[28.06%] top-[33.4%] left-[8.06%] inline-block">
-          Name
-        </div>
-      </div>
+      {/* <textarea className="bg-gray-100 font-sen text-3xl [outline:none] absolute top-[311px] left-[665px] rounded-3xs box-border w-[434px] h-[53px] py-[17.69999999999999px] px-[35px] text-darkgray border-[1.5px] border-solid border-darkgray" /> */}
       <div
         className="absolute top-[683px] left-[665px] text-sm text-dimgray inline-block w-[270px] h-[27px] cursor-pointer"
         onClick={onAlreadyHaveAnClick}
@@ -92,4 +84,4 @@ const StudentSignUp = () => {
   );
 };
 
-export default StudentSignUp;
+export default AlumniSignUp;

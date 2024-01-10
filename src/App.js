@@ -10,6 +10,10 @@ import StudentPortal from "./pages/StudentPortal";
 import SignInDashboard from "./pages/SignInDashboard";
 import StudentSignUp from "./pages/StudentSignUp";
 import AlumniPortal from "./pages/AlumniPortal";
+import IndustryPortal from "./pages/IndustryPortal";
+import AdminPortal from "./pages/AdminPortal";
+import AlumniSignUp from "./pages/AlumniSignUp";
+import CreateProfile from "./pages/CreateProfile";
 
 
 function App() {
@@ -48,6 +52,23 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+        case "/industry-portal":
+        title = "";
+        metaDescription = "";
+        break;
+        case "/admin-portal":
+          title = "";
+          metaDescription = "";
+          break;
+          case "/alumni-signup":
+          title = "";
+          metaDescription = "";
+          break;
+          case "/create-profile":
+          title = "";
+          metaDescription = "";
+          break;
+          
     }
 
     if (title) {
@@ -71,6 +92,11 @@ function App() {
       <Route path="/signin-dashboard" element={<SignInDashboard />} />
       <Route path="/student-signup" element={<StudentSignUp />} />
       <Route path="/alumni-portal" element={<AlumniPortal />} />
+      <Route path="/industry-portal" element={<IndustryPortal />} />
+      <Route path="/admin-portal" element={<AdminPortal />} />
+      <Route path="/alumni-signup" element={<AlumniSignUp />} />
+      <Route path="/create-profile" element={<CreateProfile />} />
+      
     </Routes>
   );
 }
